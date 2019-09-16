@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "c:/Users/vovtshik/Desktop/PROJECT/std_lib_facilities.h"
+                "c:/Users/vovtshik/Desktop/PROJECT/project_ex_10.09/std_lib_facilities.h"
             ],
             "defines": [
                 "_DEBUG",
