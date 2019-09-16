@@ -10,10 +10,16 @@ int main()
 	cout << "Введите цифры (1 - 5) по порядку прописью; для выхода введите пустую строку\n";
 	vector<string>nums1;
 	fill(nums1);
+	sort(nums1);
 	vector<string>nums2;
 	cout << "Введите цифры (6-9) по порядку прописью; для выхода введите пустую строку\n";
    fill(nums2);
-
+   sort(nums2);
+   out_file(nums1, "file1.txt");
+   out_file(nums2, "file2.txt");
+   vector<string>nums3;
+   in_file(nums3, "file1.txt");
+   in_file(nums3, "file2.txt");
 	return 0;
 }
 
