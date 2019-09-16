@@ -21,7 +21,7 @@ void in_file(vector<string>& vs, string& name)
 {
 	ifstream ist(name);
 	if(!ist) error("Невозможно открыть входной файл", name);
-	
+	string temp{};
 	while(true)
 	{
 		ist >> temp;
