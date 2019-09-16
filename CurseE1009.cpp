@@ -7,6 +7,8 @@ void fill(vector<string>& vs);
 int main()
 {
 	setlocale(LC_ALL, "Rus");
+	string name1 = "file1.txt";
+	string name2 = "file2.txt";
 	cout << "Введите цифры (1 - 5) по порядку прописью; для выхода введите пустую строку\n";
 	vector<string>nums1;
 	fill(nums1);
@@ -15,11 +17,11 @@ int main()
 	cout << "Введите цифры (6-9) по порядку прописью; для выхода введите пустую строку\n";
    fill(nums2);
    sort(nums2);
-   out_file(nums1, "file1.txt");
-   out_file(nums2, "file2.txt");
+   out_file(nums1, name1);
+   out_file(nums2, name2);
    vector<string>nums3;
-   in_file(nums3, "file1.txt");
-   in_file(nums3, "file2.txt");
+   in_file(nums3, name1);
+   in_file(nums3, name2);
 	return 0;
 }
 
@@ -49,10 +51,12 @@ void out_file(vector<string>& vs, string& name)
 
 void fill(vector<string>& vs)
 {
-	string temp{};
-	while(temp != "")
+	string temp{"zero"};
+	while(true)
 	{
 		cin >> temp;
 		vs.push_back(temp);
+		if(temp == "")
+			break;
 	}
 }
