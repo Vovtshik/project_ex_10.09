@@ -55,8 +55,8 @@ void fill(vector<string>& vs)
 	while(true)
 	{
 		cin >> temp;
-		vs.push_back(temp);
 		if(temp == "")
 			break;
+		vs.push_back(temp);
 	}
 }
