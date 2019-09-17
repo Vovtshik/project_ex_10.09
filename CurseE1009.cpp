@@ -9,6 +9,7 @@ int main()
 	setlocale(LC_ALL, "Rus");
 	string name1 = "file1.txt";
 	string name2 = "file2.txt";
+	string mame3 = "file3.txt";
 	cout << "Введите цифры (1 - 5) по порядку прописью; для выхода введите пустую строку\n";
 	vector<string>nums1;
 	fill(nums1);
@@ -22,6 +23,8 @@ int main()
    vector<string>nums3;
    in_file(nums3, name1);
    in_file(nums3, name2);
+   sort(nums3);
+   out_file(nums3, name3)l
 	return 0;
 }
 
