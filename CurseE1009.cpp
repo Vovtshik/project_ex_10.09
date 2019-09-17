@@ -10,12 +10,12 @@ int main()
 	string name1 = "file1.txt";
 	string name2 = "file2.txt";
 	string name3 = "file3.txt";
-	cout << "Введите цифры (1 - 5) по порядку прописью; для выхода введите пустую строку\n";
+	cout << "Введите цифры (1 - 5) по порядку прописью; для выхода введите 111\n";
 	vector<string>nums1;
 	fill(nums1);
 	sort(nums1);
 	vector<string>nums2;
-	cout << "Введите цифры (6-9) по порядку прописью; для выхода введите пустую строку\n";
+	cout << "Введите цифры (6-9) по порядку прописью; для выхода 111\n";
    fill(nums2);
    sort(nums2);
    out_file(nums1, name1);
@@ -58,7 +58,7 @@ void fill(vector<string>& vs)
 	while(true)
 	{
 		cin >> temp;
-		if(temp == "")
+		if(temp == "111")
 			break;
 		vs.push_back(temp);
 	}
